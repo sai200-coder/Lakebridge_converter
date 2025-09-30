@@ -1,0 +1,35 @@
+analyzer:
+  source_directory: C:\Users\admin\Downloads\LakeBridge_sai_modifiedcode\LakeBridge_sai\test1
+  report_file: C:\Users\admin\Downloads\LakeBridge_sai_modifiedcode\LakeBridge_sai\report1\sample1.xlsx
+  source_tech: Snowflake
+transpiler:
+  source_dialect: 
+  input_source: C:\Users\admin\Downloads\LakeBridge_sai_modifiedcode\LakeBridge_sai\test1
+  output_folder: C:\Users\admin\Downloads\LakeBridge_sai_modifiedcode\LakeBridge_sai\transpiled
+  error_file_path: C:\Users\admin\Downloads\LakeBridge_sai_modifiedcode\LakeBridge_sai\errors1
+  catalog_name: workspace
+  schema_name: default
+  validate: 'true'
+  warehouse: 56904e6c4a3bfe15
+  override: 'yes'
+  open_config: 'yes'
+modify:
+  transpiled_dir: C:\Users\admin\Downloads\LakeBridge_sai_modifiedcode\LakeBridge_sai\transpiled
+  output_dir: C:\Users\admin\Downloads\LakeBridge_sai_modifiedcode\LakeBridge_sai\Modified_files
+  llm_model: openai/gpt-oss-120b
+  temperature: 0.1
+upload:
+  source_notebook_path: C:\Users\admin\Downloads\test1\test\test_f_dt
+  destination_directory: /Workspace/Users/saimukheshmaamidala9990@gmail.com/llm_dttest
+llm_converter:
+  source_folder: C:\Users\admin\Downloads\test1\test\test_f_llm
+  output_folder: C:\Users\admin\Downloads\test1\test\test2_f_out
+  databricks_notebooks_folder: C:\Users\admin\Downloads\test1\test\test_f_dt
+  groq_api_key: 
+  llm_model: openai/gpt-oss-120b
+  temperature: 0.1
+  max_tokens: 4096
+  catalog_name: workspace
+  schema_name: default
+  preserve_structure: true
+  create_backup: true
